@@ -3,7 +3,7 @@ import React, {useRef, useState} from 'react'
 import Container from '../Container'
 import MainTitle from '../MainTitle'
 import DraggableItem from '../Draggable'
-import Area from '../AreaDrop'
+import ButtonAudio from '../ButtonAudio'
 import ButtonUi from '../ButtonControlUI'
 import Modal from '../Generales/Modal'
 import ButtonCheck from '../ButtonCheck'
@@ -82,7 +82,7 @@ const Actividad_base = ({staticContext, ...props}) => {
         <Container bgImage='./src/bg_actividad1.png' {...props} id="area" h={40} w={72}>
             
             <UiButtonsContainer>
-                <ButtonUi icon='ilx-ayuda' tooltip='click on the buttons to listen and read the activities, associate them with the texts below.' />
+                <ButtonUi icon='ilx-ayuda' tooltip='Click on the button to listen the audio, then answer' />
                 <ButtonUi icon='ilx-volver' tooltip='Start Again' onClick={ () => {window.location.href = '/actividad1'} } />
             </UiButtonsContainer>
             
@@ -93,20 +93,22 @@ const Actividad_base = ({staticContext, ...props}) => {
                 </MainTitle>
             </IRow>
             <IRow pt={4} w={95} align="center" justify="center" >
-                <IRow w={60} >
+                <IRow w={62} className="list">
                     {list}
                 </IRow>
-                <ICol w={38} mt={3.5}>
+                <ICol w={20} mt={3.5}>
                     <IRow justify="space-between" className="alg-r">
-                        <ICol className="person" >
-                            <div className="text1 person-container">
-                            </div>
-                        </ICol>
+                        <ButtonAudio src="./media/audio.mp3">
+                            <ICol className="person" > 
+                                <div className="text1 person-container">
+                                </div>  
+                            </ICol>
+                        </ButtonAudio>
                     </IRow>
                 </ICol>
 
             </IRow>
-            <IRow pt={7.3} >
+            <IRow pt={6.8} >
                 <ICol pt={1} onClick={checkActivity} ><ButtonCheck /></ICol>
             </IRow>
             <PreguntaTF visibility={modalFlag}  answers={Data} passed={passed} repeatUrl={'/actividad1'} finished={passed} />

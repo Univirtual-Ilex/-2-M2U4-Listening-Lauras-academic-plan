@@ -66,7 +66,7 @@ const Actividad2_base = ({staticContext, ...props}) => {
 
     const questions = Data.map((data,i) => {
         return(
-            <ICol w={25} key={i} >
+            <ICol w={25} key={i} className="text">
                 <p > <strong >{i + 1}).</strong> {data.text}</p>
                 <ButtonRadioSimple setCheckedState={setChecked} arrId={i} buttonId={0} nameb={'first_button1' + i} text={data.button1.text} className={"ml-1  " + 'first_button1' + i} />
                 <ButtonRadioSimple setCheckedState={setChecked} arrId={i} buttonId={1} nameb={'first_button1' + i} text={data.button2.text} className={"ml-1  " + 'first_button1' + i} /> 

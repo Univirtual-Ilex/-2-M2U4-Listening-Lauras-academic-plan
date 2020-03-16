@@ -59,12 +59,21 @@ position: relative;
 
   .true{
     background-color: ${Ilex.verde};
+    &:hover{
+      background: #43ba98;
+    }
   }
   .false{
     background-color: ${Ilex.color_rojo};
+    &:hover{
+      background: #933650;
+    }
   }
   .n-m{
     background-color: ${Ilex.violeta2};
+    &:hover{
+      background: #6a35b3;
+    }
   }
 }
 

@@ -41,6 +41,9 @@ const estilos_home = css`
             display:block;
             width:22.5em;
             height: auto;
+            margin-top: 3em;
+            margin-left: 4em;
+            transform: scale(1.2);
         }
 
     }

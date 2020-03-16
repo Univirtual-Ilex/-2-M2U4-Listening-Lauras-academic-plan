@@ -8,6 +8,7 @@ const styles = css`
         orphans:0;
         widows: 0;
         
+        
         li{
             margin: 0.5em 0.5em;
 
@@ -24,6 +25,7 @@ const styles = css`
         align-content:space-between;
         flex-wrap:wrap;
         height:25.4em;
+        
         li{
             margin: 0.5em 0.5em;
             width: 10em ;
@@ -45,11 +47,15 @@ const styles = css`
     }
 
 
-    &.columns{
-        height: 40em;
+   &.columns{
+        height: 30em;
         flex-direction: column;
         flex-wrap: wrap;
+        color: ${Ilex.textos};
+        line-height: 1.5em;
     }
+  
+    
 
 
 `

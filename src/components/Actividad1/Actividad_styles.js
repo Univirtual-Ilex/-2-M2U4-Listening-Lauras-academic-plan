@@ -14,8 +14,8 @@ const mistyles = css`
     justify-content: center;
 }
 .person{
-        width:200px;
-        height:215px;
+        width:220px;
+        height:235px;
         cursor: pointer;
         position:relative;
         .person-container{
@@ -25,7 +25,7 @@ const mistyles = css`
             background-repeat: no-repeat;
             background-position: 0 0;
             &:hover{
-                background-position-y:-215px ;
+                background-position-y:-230px ;
             }
             &.text1{
 
@@ -40,8 +40,11 @@ const mistyles = css`
     position:relative;
 }
 .inline_list{
-    font-size:0.8em;
+    font-size:13px;
     color:${Ilex.color_grisMedio}
+}
+.list{
+    
 }
 `
 
