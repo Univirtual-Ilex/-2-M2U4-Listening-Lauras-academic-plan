@@ -75,7 +75,7 @@ const Actividad2_base = ({staticContext, ...props}) => {
         )
     })
     return (
-        <Container bgImage='./src/bg_actividad1.png' h={46} w={80} {...props}>
+        <Container bgImage='./src/bg_actividad1.png' h={46} w={75} {...props}>
 
             <UiButtonsContainer>
                 <ButtonUi icon='ilx-ayuda' tooltip='Drag the words to the appropriate box, plural, female or male.' />
@@ -95,7 +95,7 @@ const Actividad2_base = ({staticContext, ...props}) => {
             </IRow>
 
 
-            <IRow pt={7.7} >
+            <IRow pt={4.7} >
                 <ICol  onClick={checkActivity} ><ButtonCheck /></ICol>
             </IRow>
             <PreguntaTF visibility={modalFlag}  answers={Data} passed={passed} repeatUrl={'/actividad2'} finished={passed} />

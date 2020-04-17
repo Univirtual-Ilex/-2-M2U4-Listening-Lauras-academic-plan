@@ -83,7 +83,7 @@ const Actividad_base = ({staticContext, ...props}) => {
             
             <UiButtonsContainer>
                 <ButtonUi icon='ilx-ayuda' tooltip='Click on the button to listen the audio, then answer' />
-                <ButtonUi icon='ilx-volver' tooltip='Start Again' onClick={ () => {window.location.href = '/actividad1'} } />
+                <ButtonUi icon='ilx-volver' tooltip='Start Again' onClick={ () => {window.location.reload()} } />
             </UiButtonsContainer>
             
           
@@ -98,7 +98,7 @@ const Actividad_base = ({staticContext, ...props}) => {
                 </IRow>
                 <ICol w={20} mt={3.5}>
                     <IRow justify="space-between" className="alg-r">
-                        <ButtonAudio src="./media/audio.mp3">
+                        <ButtonAudio src="./media/27-Listening-Activity-Laura.mp3">
                             <ICol className="person" > 
                                 <div className="text1 person-container">
                                 </div>  
@@ -111,7 +111,7 @@ const Actividad_base = ({staticContext, ...props}) => {
             <IRow pt={6.8} >
                 <ICol pt={1} onClick={checkActivity} ><ButtonCheck /></ICol>
             </IRow>
-            <PreguntaTF visibility={modalFlag}  answers={Data} passed={passed} repeatUrl={'/actividad1'} finished={passed} />
+            <PreguntaTF visibility={modalFlag}  answers={Data} passed={passed} repeatUrl={'/#/actividad1'} finished={passed} />
         </Container>
     )
 
