@@ -21,7 +21,6 @@ const Gstyle = createGlobalStyle`
         height: 100%;
     }
     body{
-        @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Rubik:400,700,900&display=swap');
         font-family:${Ilex.font};
         font-size: ${Ilex.font_size};
         -webkit-font-smoothing: antialiased;
